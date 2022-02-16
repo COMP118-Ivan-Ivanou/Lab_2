@@ -9,7 +9,7 @@
 *				Also added function calAreaOfCircle(); to check/use assert(); function
 *				and <cassert> library
 *  \author		Ivan Ivanou
-*  \version		0.1
+*  \version		0.2
 *  \date		02.16.2022(dd.mm.yyyy)
 *  \copyright	GNU Public License
 */
@@ -24,10 +24,10 @@ using namespace std;
 const int MAX_ARRAY = 10;
 const int PI = 3.14;
 
-void drawAhorizontalLine(int numb);
-void drawAverticalLine(int numb1);
-void drawAsquare(int numb2);
-void draw_rectangle(int numb3, int numb4);
+void drawAhorizontalLine(const int numb, const char ch);
+void drawAverticalLine(const int numb1, const char ch);
+void drawAsquare(const int numb2);
+void draw_rectangle(const int numb3, const int numb4);
 void shapeLen(int randArray[MAX_ARRAY]);
 void shapeTy(int randArray1[MAX_ARRAY]);
 void shapeCh(char randArray2[MAX_ARRAY]);
@@ -54,13 +54,13 @@ int main() {
 		case 1:
 			cout << "Enter the number of stars:";
 			cin >> num2;
-			drawAhorizontalLine(num2);
+			drawAhorizontalLine(num2, '*');
 			break;
 
 		case 2:
 			cout << "Enter the number of stars:";
 			cin >> num3;
-			drawAverticalLine(num3);
+			drawAverticalLine(num3, '@');
 			break;
 
 		case 3:
@@ -90,12 +90,12 @@ int main() {
 * @return a horizontal line
 * returning in case that the number is > 0
 */
-void drawAhorizontalLine(int numb) {
+void drawAhorizontalLine(const int numb, const char ch) {
 	//check if the number acceptable
 	if (numb > 0) {
 		//creating a loop which take numb1 as a parameter of amount of *
 		for (int i = 0; i < numb; i++) {
-			cout << "*";
+			cout << ch;
 		}
 	}
 }
@@ -106,11 +106,11 @@ void drawAhorizontalLine(int numb) {
 * @return a vertical line
 * returning in case that the number is > 0
 */
-void drawAverticalLine(int numb1) {
+void drawAverticalLine(const int numb1, const char ch) {
 	if (numb1 > 0) {
 		//creating a loop which take numb1 as a parameter of amount of *
 		for (int i = 0; i < numb1; i++) {
-			cout << "@\n";
+			cout << ch + "\n";
 		}
 	}
 }
@@ -122,7 +122,7 @@ void drawAverticalLine(int numb1) {
 * @return a square
 * returning in case that the number is > 0
 */
-void drawAsquare(int numb2) {
+void drawAsquare(const int numb2) {
 	if (numb2 > 0) {
 		//draw the top wall
 		for (int column = 0; column < numb2; ++column)
@@ -162,7 +162,7 @@ void drawAsquare(int numb2) {
 * @return a rectangle
 * returning in case that the numbers is > 0
 */
-void draw_rectangle(int numb3, int numb4) {
+void draw_rectangle(const int numb3, const int numb4) {
 	if (numb3 > 0 && numb4 > 0) {
 		//using for loop for the height
 		for (int i = 0; i < numb3; i++) {
