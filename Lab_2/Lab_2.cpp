@@ -10,7 +10,7 @@
 *				and <cassert> library
 *  \author		Ivan Ivanou
 *  \version		0.2
-*  \date		02.16.2022(dd.mm.yyyy)
+*  \date		02.16.2022(mm.dd.yyyy)
 *  \copyright	GNU Public License
 */
 
