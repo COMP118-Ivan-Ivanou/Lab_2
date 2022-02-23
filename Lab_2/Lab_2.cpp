@@ -1,6 +1,6 @@
-/**\file		Lab_1_and_2
-*  \brief		Program which creates a menu where user can select which function to call
-*  \details		Program which creates a menu via do while loop
+/** \file		Lab_1_and_2
+*   \brief		Program which creates a menu where user can select which function to call
+*   \details		Program which creates a menu via do while loop
 *				where user can select which function to call.
 *				Also there is a functions like shapeLen & shape...
 *				which we cannot call from the menu. 
@@ -8,10 +8,10 @@
 *				and assert(); method to make pre and post check of in/output.
 *				Also added function calAreaOfCircle(); to check/use assert(); function
 *				and <cassert> library
-*  \author		Ivan Ivanou
-*  \version		0.2
-*  \date		02.16.2022(mm.dd.yyyy)
-*  \copyright	GNU Public License
+*   \author		Ivan Ivanou
+*   \version		0.2
+*   \date		02.16.2022(mm.dd.yyyy)
+*   \copyright	GNU Public License
 */
 
 #include <iostream>
