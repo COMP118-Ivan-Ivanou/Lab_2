@@ -1,4 +1,4 @@
-/** \file		Lab_1_and_2
+/** \file		Lab_2
 *   \brief		Program which creates a menu where user can select which function to call
 *   \details	Program which creates a menu via do while loop
 *				where user can select which function to call.
